@@ -8,3 +8,4 @@ t/02opts.t
 t/03filtopts.t
 t/04install.t
 t/05newtype.t
+t/06alreadymade.t

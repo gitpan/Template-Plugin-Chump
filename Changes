@@ -1,5 +1,10 @@
 Revision history for Perl extension Template::Plugin::Chump.
 
+2003-06-25 More docs, a new option
+
+	Improved the docs. Added something so that you can
+	pass in an already formed Text::Chump object.
+
 
 2003-03-10 Added install and type handlers
 
