@@ -1,0 +1,78 @@
+README for Template::Plugin::Chump 1.0
+
+=head1 NAME
+
+Template::Plugin::Chump - provides a Template Toolkit filter for Chump like syntax
+
+=head1 SYNOPSIS
+
+	[% USE Chump %]
+
+	<html>
+	<body>
+
+	[% FILTER chump %]
+
+	This will get turned into a clickable link
+	http://something.com 
+
+	This will turn the word 'foo' into a link to bar.com
+	[foo|http://bar.com]
+
+	This will get turned into an inline image with the label 'foo'
+	+[bar|http://foo.com/quux.jpg]
+
+	[% END %]
+
+	And this will do what you expect
+	[% somevar FILTER chump %]
+
+	[% Chump.new_type('equal','=', subref,'rege+xp') %]
+	[% FILTER chump %]
+	=[foo|regeeeeexp]
+	[% END %]
+	the subroutine subref will now be called.
+
+	[% FILTER chump( {links=>0}) %]
+	links won't be parsed so this ...
+	[foo|http://bar.com]
+	will remain as is
+	[% END %]	
+	
+	</body>
+	</html>
+
+
+
+=head1 DEPENDENCIES
+
+This module has external dependencies on the following modules:
+
+ Template
+ Test::More
+ Text::Chump     
+
+=head1 INSTALLATION
+
+ perl Makefile.PL
+ make test
+
+and if all goes well
+
+ make install
+
+=head1 HISTORY
+
+Revision history for Perl extension Template::Plugin::Chump.
+
+
+2003-03-10 Added install and type handlers
+
+=head1 AUTHOR
+
+Simon Wistow <simon@thegestalt.org>
+
+=head1 SEE ALSO
+
+L<Text::Chump>, L<Template::Plugin::Filter>
+

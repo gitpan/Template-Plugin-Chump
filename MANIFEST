@@ -1,0 +1,10 @@
+Changes
+Chump.pm
+MANIFEST
+Makefile.PL
+README
+t/01simple.t
+t/02opts.t
+t/03filtopts.t
+t/04install.t
+t/05newtype.t
