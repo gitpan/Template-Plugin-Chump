@@ -1,5 +1,9 @@
 Revision history for Perl extension Template::Plugin::Chump.
 
+2003-10-07 Some minor fixing
+	To fix a minor snafu with Template::Plugin::ShellQuote
+	
+
 2003-06-25 More docs, a new option
 
 	Improved the docs. Added something so that you can
