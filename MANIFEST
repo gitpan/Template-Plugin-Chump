@@ -1,5 +1,5 @@
 Changes
-Chump.pm
+lib/Template/Plugin/Chump.pm
 MANIFEST
 Makefile.PL
 README
@@ -9,3 +9,4 @@ t/03filtopts.t
 t/04install.t
 t/05newtype.t
 t/06alreadymade.t
+META.yml                                 Module meta-data (added by MakeMaker)

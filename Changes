@@ -1,5 +1,8 @@
 Revision history for Perl extension Template::Plugin::Chump.
 
+2008-03-25 Fix Makefile
+    Bring up to date
+
 2003-10-07 Some minor fixing
 	To fix a minor snafu with Template::Plugin::ShellQuote
 	
